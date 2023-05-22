@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="kr">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>38JS - Color_flipper</title>
-    <script src="./color_flipper.js"></script>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>38JS - Color_flipper</title>
+<script src="./color_flipper.js"></script>
+<link rel="stylesheet" href="./reset.css">
+<link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
         <h1 class="color_title">Color Flipper</h1>
         <span class="color_value">#f15025</span>
         <button class="color_btn">click me</button>
     </div>
+    <div class="container">
+        <h1 class="color_title">Color Flipper</h1>
+        <span class="color_value">#f15025</span>
+        <button class="color_btn">click me</button>
+    </div>
+    <div class="container">
+        <h1 class="color_title">Color Flipper</h1>
+        <span class="color_value">#f15025</span>
+        <button class="color_btn">click me</button>
+    </div>
+    <div class="container">
+        <h1 class="color_title">Color Flipper</h1>
+        <span class="color_value">#f15025</span>
+        <button class="color_btn">click me</button>
+    </div>
+    <div class="container">
+        <h1 class="color_title">Color Flipper</h1>
+        <span class="color_value">#f15025</span>
+        <button class="color_btn">click me</button>
+    </div>
+    <div class="container">
+        <h1 class="color_title">Color Flipper</h1>
+        <span class="color_value">#f15025</span>
+        <button class="color_btn">click me</button>
+    </div>
+
     <script>
-        const colorFlipper = new ColorFlipper('.container');
+        const colorBlocks = document.querySelectorAll('.container');
+        const colorFlipperInit = () => {
+            colorBlocks.forEach((colorBlock) => {
+                const colorFlipper = new ColorFlipper(colorBlock);
+            });
+        }
+
+        colorFlipperInit();
+
+        // const colorFlipper = new ColorFlipper('.color-box1');
+        // const colorFlipper2 = new ColorFlipper('.color-box2');
     </script>
 </body>
+
 </html>

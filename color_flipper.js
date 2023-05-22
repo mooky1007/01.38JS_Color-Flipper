@@ -1,6 +1,6 @@
 class ColorFlipper {
     constructor(target) {
-        this.target = document.querySelector(target);
+        this.target = target;
         this.colorCode = this.target.querySelector('.color_value');
         this.actionButton = this.target.querySelector('.color_btn');
         this.init();
